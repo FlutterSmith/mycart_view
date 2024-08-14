@@ -34,17 +34,11 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
-  easy_localization:
-  flutter_svg:
-  flutter_native_splash:
-  flutter_launcher_icons:
-  flutter_bloc:
-  flutter_local_notifications:
-  dartz:
-  dio:
-  inspection:
+ 
   smooth_page_indicator: ^1.2.0+3
+  flutter_credit_card: ^4.0.0+1
+  flutter_svg: ^2.0.7
+  font_awesome_flutter: ^10.5.0
 
   
 dev_dependencies:
@@ -73,9 +67,9 @@ flutter:
   assets:
     - assets/
 
-    - assets/fonts/
-    - assets/images/
-    - assets/icons/
+    
+    
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -88,98 +82,4 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Inter
-      fonts:
-        - asset:  assets/fonts/Inter-Light.ttf
-          weight: 300
-        - asset:  assets/fonts/Inter-Regular.ttf
-          weight: 400
-        - asset:  assets/fonts/Inter-Bold.ttf
-          weight: 700
-        - asset:  assets/fonts/Inter-ExtraBold.ttf
-          weight: 800
-        - asset:  assets/fonts/Inter-Medium.ttf
-          weight: 500
-        - asset:  assets/fonts/Inter-SemiBold.ttf
-          weight: 600
-    - family: Poppins
-      fonts:
-        - asset:  assets/fonts/Poppins-Bold.ttf
-          weight: 700
-        - asset:  assets/fonts/Poppins-Medium.ttf
-          weight: 500
-        - asset:  assets/fonts/Poppins-Regular.ttf
-          weight: 400
-        - asset:  assets/fonts/Poppins-SemiBold.ttf
-          weight: 600
-    - family: Almarai
-      fonts:
-        - asset: assets/fonts/Almarai-Light.ttf
-          weight: 300
-        - asset: assets/fonts/Almarai-Regular.ttf
-          weight: 400
-        
-        - asset: assets/fonts/Almarai-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Almarai-ExtraBold.ttf
-          weight: 800    
-    - family: NunitoSans
-      fonts:
-        - asset: assets/fonts/NunitoSans-Light.ttf
-          weight: 300
-        - asset: assets/fonts/NunitoSans-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/NunitoSans-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/NunitoSans-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/NunitoSans-ExtraBold.ttf
-          weight: 800          
-    - family: InterDisplay
-      fonts:
-        - asset: assets/fonts/InterDisplay-Light.ttf
-          weight: 300
-        - asset: assets/fonts/InterDisplay-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/InterDisplay-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/InterDisplay-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/InterDisplay-ExtraBold.ttf
-          weight: 800   
-    - family: Manrope
-      fonts:
-        - asset: assets/fonts/Manrope-Regular.otf
-          weight: 400
-        - asset: assets/fonts/Manrope-Light.otf
-          weight: 300
-        - asset: assets/fonts/manrope-medium.otf
-          weight: 500
-        - asset: assets/fonts/Manrope-Bold.otf
-          weight: 700
-        - asset: assets/fonts/Manrope-ExtraBold.otf
-          weight: 800    
-    - family: Raleway
-      fonts:
-        - asset: assets/fonts/Raleway-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/Raleway-Light.ttf
-          weight: 300
-        - asset: assets/fonts/Raleway-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Raleway-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Raleway-ExtraBold.ttf
-          weight: 800        
-    - family: SFProDisplay
-      fonts:
-        - asset: assets/fonts/SFPRODISPLAY-REGULAR.OTF
-          weight: 400
-        - asset: assets/fonts/SFPRODISPLAY-MEDIUM.OTF
-          weight: 500
-        - asset: assets/fonts/SFPRODISPLAY-BOLD.OTF
-          weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  
