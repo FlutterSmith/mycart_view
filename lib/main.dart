@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 
 import 'Features/checkout/presentation/views/my_cart_view.dart';
 
@@ -17,3 +18,8 @@ class CheckoutApp extends StatelessWidget {
     );
   }
 }
+
+// PaymentIntentObject create payment intent (amount, currency, payment method)
+// init payment sheet (payment intent client secret)
+
+// presentPaymentSheet()
