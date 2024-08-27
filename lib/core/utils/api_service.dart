@@ -7,6 +7,7 @@ class ApiService {
       {required String url,
       required body,
       required String token,
+      Map<String, String>? headers,
       String? contentType}) async {
     // Make a POST request
 
@@ -14,11 +15,10 @@ class ApiService {
       url,
       data: body,
       options: Options(
-        headers: {
-          'Authorization': 'Bearer $token',
-          
+        headers: headers ?? {
+          'Authorization': 'Bearer $token', 
         },
-        contentType: contentType, 
+        contentType: contentType,
       ),
     );
     return response;
