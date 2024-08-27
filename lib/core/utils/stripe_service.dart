@@ -12,7 +12,7 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 class StripeService {
   final ApiService apiService = ApiService();
 
-  Future<PaymentIntentModel> createpaymentIntent(
+  Future<PaymentIntentModel> createPaymentIntent(
       PaymentIntentInputModel paymentiIntentInputModel) async {
     var response = await apiService.post(
         url: 'https://api.stripe.com/v1/payment_intents',
@@ -42,7 +42,7 @@ class StripeService {
   Future makePayment(
       {required PaymentIntentInputModel paymentiIntentInputModel}) async {
     var paymentIntentModel =
-        await createpaymentIntent(paymentiIntentInputModel);
+        await createPaymentIntent(paymentiIntentInputModel);
     var ephemeralKeyModel =
         await createEphemeralKey(customerId: paymentiIntentInputModel.customer);
 
@@ -73,13 +73,13 @@ class StripeService {
   Future<EphemeralKeyModel> createEphemeralKey(
       {required String customerId}) async {
     var response = await apiService.post(
-        url: 'https://api.stripe.com/v1/payment_intents',
+        url: 'https://api.stripe.com/v1/ephemeral_keys',
         body: {
           'customer': customerId,
         },
         headers: {
           'Authorization': 'Bearer ${ApiKeys.secretKey}',
-          'Stripe-Version': '2024-06-20'
+          'Stripe-Version': '2024-06-20',
         },
         contentType: Headers.formUrlEncodedContentType,
         token: ApiKeys.secretKey);
